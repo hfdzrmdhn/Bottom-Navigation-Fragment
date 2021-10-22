@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+    <item
+        android:id="@+id/mHome"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+ 
+    <item
+        android:id="@+id/mProduk"
+        android:icon="@drawable/ic_produk"
+        android:title="Produk" />
+ 
+    <item
+        android:id="@+id/mChat"
+        android:icon="@drawable/ic_chat"
+        android:title="Chat" />
+ 
+    <item
+        android:id="@+id/mPenjualan"
+        android:icon="@drawable/ic_penjualan"
+        android:title="Penjualan" />
+ 
+	<item
+        android:id="@+id/mLainnya"
+        android:icon="@drawable/ic_lainnya"
+        android:title="Lainnya" />
+	
+</menu>
