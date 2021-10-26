@@ -23,6 +23,6 @@
 	<item
         android:id="@+id/mLainnya"
         android:icon="@drawable/ic_lainnya"
-        android:title="Lainnya" />
+        android:title="Aplikasi" />
 	
 </menu>

@@ -13,6 +13,9 @@ import androidx.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.widget.TextView;
 import androidx.appcompat.app.ActionBar;
+import android.view.Menu;
+import android.view.MenuInflater;
+import java.util.zip.Inflater;
 
 public class MainActivity extends AppCompatActivity {
 	
@@ -25,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		toolbar = findViewById (R.id.toolbar);
+		toolbar = findViewById(R.id.toolbar_include);
 		setSupportActionBar(toolbar);
 		toolbarTitle = getSupportActionBar();
 		
@@ -38,23 +41,28 @@ public class MainActivity extends AppCompatActivity {
 				switch(item.getItemId()){
 					case R.id.mHome:
 						selectedFragment = new FragmentC1();
-						toolbarTitle.setTitle("Bottom Navigation Fragment");
+						toolbarTitle.setTitle("BukaToko");
+						getSupportActionBar().show();
 						break;
 					case R.id.mProduk:
 						selectedFragment = new FragmentC2();
 						toolbarTitle.setTitle("Produk");
+						getSupportActionBar().show();
 						break;
 					case R.id.mChat:
 						selectedFragment = new FragmentC3();
 						toolbarTitle.setTitle("Chat");
+						getSupportActionBar().show();
 						break;
 					case R.id.mPenjualan:
 						selectedFragment = new FragmentC4();
 						toolbarTitle.setTitle("Penjualan");
+						getSupportActionBar().show();
 						break;
 					case R.id.mLainnya:
 						selectedFragment = new FragmentC5();
-						toolbarTitle.setTitle("Lainnya");
+						toolbarTitle.setTitle("Aplikasi");
+						getSupportActionBar().show();
 						break;
 					
 				}
@@ -63,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
 			}
 		});
 	}
+
 	
 }
 
