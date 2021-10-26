@@ -22,5 +22,4 @@ public class FragmentC3 extends Fragment {
 		super.onCreateOptionsMenu(menu, inflater);
 	}
 
-
 }    
